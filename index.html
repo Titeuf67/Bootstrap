@@ -42,7 +42,7 @@
               <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 Dropdown button
-              </button>
+              </button class="m-5">
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                 <li><a class="dropdown-item" href="#">Action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -69,7 +69,8 @@
     </div>
   </header>
   <!-- bordure -->
-  <span class="border border-success"></span>
+  <div class="row my-1">
+  <span class="border border-bottom-5 border-success"></span></div>
   <!-- icones -->
   <container class="row">
     <div class="col-md-6 d-flex justify-content-around">
@@ -135,15 +136,20 @@
         <a href="#" class="card-link">Another link</a>
       </div>
     </div>
-
   </list-card>
+  <!-- border -->
+  <div class="row my-1 justify-content-center">
+
+   <span class="border-bottom border-secondary"style="width: 18rem; margin: 10px;"></span>
+   
+  </div>
   <!-- formulaire -->
-  <form class="m-5">
+  <form class=" bg-dark bg-opacity-10  p-2 m-5">
     <h1 class="text-center m-5">Contactez-moi</h1>
     <div class="row">
-
+<!-- colonne de gauche -->
       <div class="col-md-6  ">
-        <div class="row d-flex justify-content-center">
+        <div class="row justify-content-center">
           <div class="mb-3 col-md-6">
             <label for="exampleFormControlInput1" class="form-label">Votre Prénom</label>
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
@@ -165,31 +171,23 @@
           <label for="exampleFormControlTextarea1" class="form-label">Message</label>
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
-        <div class="d-flex justify-content-center"><button type="envoyer" class="btn btn-primary">Primary</button>
+        <div class="d-flex justify-content-center">
+          <button type="envoyer" class="btn btn-primary">Primary</button>
         </div>
 
       </div>
+      <!-- colonne de droite -->
       <div class="col-md-6">
-
-        <div class="card" style="width: 100%;">
-          <div class="card-body">
-            <span class="placeholder col-12 bg-light"></span>
-            <span class="placeholder col-12 bg-light"></span>
-            <h5 class="card-title text-center ">Email</h5>
-            <h6 class="card-subtitle mb-2 text-muted text-center ">Email@gmail.com</h6>
-            <span class="placeholder col-12 bg-light"></span>
-            <span class="placeholder col-12 bg-light"></span>
+        <div class="card my-2" style="height:45%;">
+          <div class="card-body d-flex justify-content-center align-items-center" >           
+            <div><h5 class="card-title text-center">Email</h5>
+            <h6 class="card-subtitle mb-2 text-center">Email@gmail.com</h6></div>
           </div>
         </div>
-        <span class="placeholder col-12 bg-light"></span>
-        <div class="card" style="width: 100%;">
-          <div class="card-body">
-            <span class="placeholder col-12 bg-light"></span>
-            <span class="placeholder col-12 bg-light"></span>
-            <h5 class="card-title text-center">Telephone</h5>
-            <h6 class="card-subtitle mb-2 text-muted text-center">06 06 06 06 06</h6>
-            <span class="placeholder col-12 bg-light"></span>
-            <span class="placeholder col-12 bg-light"></span>
+                <div class="card my-2" style="height: 45%;">
+          <div class="card-body d-flex justify-content-center align-items-center">         
+            <div><h5 class="card-title text-center">Telephone</h5>
+            <h6 class="card-subtitle mb-2  text-center">06 06 06 06 06</h6></div>
           </div>
         </div>
       </div>
